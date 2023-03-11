@@ -481,10 +481,10 @@ class GifSearch extends PureComponent {
               var gif_better_quality = null;
 
               if (item.provider == providers.TENOR) {
-                gif_preview = item.media[0][this.tenorGifPreview].url
-                gif_better_quality = item.media[0][this.tenorGifSelected].url
-                if (parseInt(item.media[0][this.tenorGifSelected].dims[1])) {
-                    aspect_ratio = parseInt(item.media[0][this.tenorGifSelected].dims[0])/parseInt(item.media[0][this.tenorGifSelected].dims[1])
+                gif_preview = item.media_formats[0][this.tenorGifPreview].url
+                gif_better_quality = item.media_formats[0][this.tenorGifSelected].url
+                if (parseInt(item.media_formats[0][this.tenorGifSelected].dims[1])) {
+                    aspect_ratio = parseInt(item.media_formats[0][this.tenorGifSelected].dims[0])/parseInt(item.media[0][this.tenorGifSelected].dims[1])
                 }
               } else {
                 gif_preview = item.images[this.giphyGifPreview].url
