@@ -16,7 +16,7 @@ import {
 import Requests from './Requests';
 
 const GIPHY_BASE_URL = 'https://api.giphy.com/v1/';
-const TENOR_BASE_URL = 'https://api.tenor.com/v1/';
+const TENOR_BASE_URL = 'https://api.tenor.com/v2/';
 
 const providers = {
   TENOR: "tenor",
