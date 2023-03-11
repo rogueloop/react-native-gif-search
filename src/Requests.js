@@ -15,7 +15,7 @@ export default class Requests {
                         }
                         resolve(JSON.parse(xhr.responseText))
                     } catch (error) {
-                        reject("Error");
+                        reject("Error happened ",error);
                     }
 
                 }
