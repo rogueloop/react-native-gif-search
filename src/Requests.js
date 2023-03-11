@@ -11,11 +11,11 @@ export default class Requests {
                     
                     try {
                         if (xhr.status == 401) {
-                            reject("Unauthorized");
+                            console.log("Unauthorized");
                         }
                         resolve(JSON.parse(xhr.responseText))
                     } catch (error) {
-                        reject("Error happened ",error);
+                        console.log("Error happened ",error);
                     }
 
                 }
